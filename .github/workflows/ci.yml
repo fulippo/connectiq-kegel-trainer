@@ -9,6 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
       - name: Checkout code
@@ -41,13 +42,18 @@ jobs:
           HASH=$(connect-iq-sdk-manager agreement view 2>&1 | grep -i 'hash' | sed 's/.*: //')
           connect-iq-sdk-manager agreement accept -H "$HASH"
 
+      # With empty credentials the login waits on a prompt; fail fast instead of hanging until
+      # the 6-hour job default.
       - name: Login to Garmin
         if: steps.cache-sdk.outputs.cache-hit != 'true'
+        timeout-minutes: 5
         env:
           GARMIN_USERNAME: ${{ secrets.GARMIN_USERNAME }}
           GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
         run: |
-          connect-iq-sdk-manager login --username "$GARMIN_USERNAME" --password "$GARMIN_PASSWORD"
+          : "${GARMIN_USERNAME:?Set the GARMIN_USERNAME repository secret}"
+          : "${GARMIN_PASSWORD:?Set the GARMIN_PASSWORD repository secret}"
+          connect-iq-sdk-manager login --username "$GARMIN_USERNAME" --password "$GARMIN_PASSWORD" < /dev/null
 
       - name: Download Connect IQ SDK and devices
         if: steps.cache-sdk.outputs.cache-hit != 'true'
