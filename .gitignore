@@ -25,3 +25,9 @@ developer_key.der
 # Temporary files
 *.tmp
 *.bak
+
+# Screenshot-mode config and scratch output
+shot/
+build/
+shots/
+design/shots/

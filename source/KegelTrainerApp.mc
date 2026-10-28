@@ -17,6 +17,6 @@ class KegelTrainerApp extends App.AppBase {
     function getInitialView() {
         var view = new KegelTrainerView();
         var delegate = new KegelTrainerDelegate(view);
-        return [view, delegate];
+        return ShotMode.initial(view, delegate);
     }
 }
