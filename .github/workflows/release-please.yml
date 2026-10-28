@@ -3,6 +3,13 @@ name: Release Please
 on:
   push:
     branches: [main]
+  # Upload an already published release to the store: Actions > Release Please > Run workflow, tag v1.2.3
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag whose .iq goes to the store (e.g. v1.2.3)"
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -10,6 +17,7 @@ permissions:
 
 jobs:
   release-please:
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     outputs:
       release_created: ${{ steps.release.outputs.release_created }}
@@ -108,3 +116,43 @@ jobs:
           gh release upload ${{ needs.release-please.outputs.tag_name }} \
             bin/KegelTrainer.iq \
             --clobber
+
+      - name: Upload to the Connect IQ Store
+        if: vars.STORE_SYNC == 'on' && hashFiles('design/store/listing.toml') != ''
+        timeout-minutes: 15
+        env:
+          GARMIN_USERNAME: ${{ secrets.GARMIN_USERNAME }}
+          GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
+          TAG: ${{ needs.release-please.outputs.tag_name }}
+        run: |
+          pip install pillow
+          # What's New comes from whats_new in design/store/listing.toml, written for buyers
+          python tools/store_sync.py sync --iq bin/KegelTrainer.iq --version "${TAG#v}"
+
+  # Manual run: send an already published release to the store (the .iq is the one on the release)
+  store-upload:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Upload to the Connect IQ Store
+        if: vars.STORE_SYNC == 'on' && hashFiles('design/store/listing.toml') != ''
+        env:
+          GARMIN_USERNAME: ${{ secrets.GARMIN_USERNAME }}
+          GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ inputs.tag }}
+        run: |
+          pip install pillow
+          mkdir -p bin
+          gh release download "$TAG" --pattern '*.iq' --dir bin --clobber
+          python tools/store_sync.py sync --iq bin/KegelTrainer.iq --version "${TAG#v}"
