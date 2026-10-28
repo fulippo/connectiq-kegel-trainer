@@ -1,0 +1,4 @@
+pillow
+fonttools
+brotli
+tomli

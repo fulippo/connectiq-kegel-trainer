@@ -64,6 +64,9 @@ Manual commands:
 ## Screenshot mode (store captures)
 `source/ShotMode.mc` holds a stub in the shipping build; `monkey-shot.jungle` swaps in the real thing (the annotations `shotmode`/`noshot`). `tools/shot_build.sh DEVICE OUT.prg SCREEN [STATE] [REMAINING] [REP] [SERIES]` builds an English, frozen screen (no timer, no recording): screens ready, exercise, complete. Capture it with the plugin's `sim_shot.sh` (SIM_PRG=...). Never ship these builds.
 
+## Store listing
+`design/store/listing.toml` is the source of the store page (18 languages, images; the app is free); `tools/store_sync.py` and `.github/workflows/store.yml` keep the store in step (PRs run `check`, merges to main sync). Change the listing here, not in the dashboard. Images: the plugin's `store_images.py` with `design/store.json` (`"kind": "app"`), from simulator captures in `design/shots/` (git-ignored): build with `tools/shot_build.sh` (screenshot mode, see ShotMode.mc), capture with the plugin's `sim_shot.sh` (`SIM_CROP=2,58,1364,1826` for the whole-watch fr965 captures, none for the screen-only `screen-contract.png`).
+
 ## Permissions
 - **Fit:** Required for ActivityRecording API (saves workouts to Garmin Connect)
 
