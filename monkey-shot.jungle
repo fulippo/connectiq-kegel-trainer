@@ -1,0 +1,6 @@
+# Screenshot-mode build (scratch, never shipped): adds shot/ShotConfig.mc, keeps ShotMode's real
+# code. Make shot/ShotConfig.mc with tools/shot_config.sh; see ShotMode.mc.
+project.manifest = manifest.xml
+base.sourcePath = source;shot
+base.resourcePath = resources
+base.excludeAnnotations = noshot

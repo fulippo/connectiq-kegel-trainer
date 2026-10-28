@@ -171,10 +171,25 @@ class KegelTrainerView extends Ui.View {
     }
 
     //! Start the countdown timer (fires every second)
+    (:noshot)
     private function startTimer() {
         if (_timer != null) {
             _timer.start(method(:onTimerTick), 1000, true);
         }
+    }
+
+    //! Screenshot mode: the screen stays as set, nothing ticks
+    (:shotmode)
+    private function startTimer() {}
+
+    //! Screenshot mode: put the view in a state without starting a timer or a session
+    (:shotmode)
+    function shotState(state as Lang.Number, remaining as Lang.Number, rep as Lang.Number,
+                       series as Lang.Number) as Void {
+        _state = state;
+        _timeRemaining = remaining;
+        _currentRep = rep;
+        _currentSeries = series;
     }
 
     //! Stop the countdown timer

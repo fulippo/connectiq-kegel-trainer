@@ -61,6 +61,9 @@ Manual commands:
 - **Run Simulator:** `connectiq`
 - **Execute App:** `monkeydo bin/kegel.prg fenix7`
 
+## Screenshot mode (store captures)
+`source/ShotMode.mc` holds a stub in the shipping build; `monkey-shot.jungle` swaps in the real thing (the annotations `shotmode`/`noshot`). `tools/shot_build.sh DEVICE OUT.prg SCREEN [STATE] [REMAINING] [REP] [SERIES]` builds an English, frozen screen (no timer, no recording): screens ready, exercise, complete. Capture it with the plugin's `sim_shot.sh` (SIM_PRG=...). Never ship these builds.
+
 ## Permissions
 - **Fit:** Required for ActivityRecording API (saves workouts to Garmin Connect)
 
