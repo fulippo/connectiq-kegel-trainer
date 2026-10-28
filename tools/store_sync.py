@@ -821,6 +821,7 @@ def main():
             print("Live monetization: " + re.sub(r"(ticket|token|session|cookie)[=:]\S+", r"\1=…", text)[:2000])
             for key in price_fields(live):
                 print(f"Price field: {key} = {live[key]}")
+            print(f"Live links: source = {live.get('sourceUrl') or '(none)'}; video = {live.get('videoUrl') or '(none)'}")   # not the email: CI logs can be public
             try:   # the live category and subcategory by name, so "category differs" can be acted on
                 for top in store.reference("categories"):
                     if isinstance(top, dict) and top.get("id") == live.get("category"):
