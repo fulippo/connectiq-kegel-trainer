@@ -1,0 +1,52 @@
+# Keeps the Connect IQ Store listing in step with design/store/ (face-publish skill).
+# - Every change to design/store/: validate offline (limits, files, image sizes).
+# - Pull requests, Mondays and manual runs: check what a sync would change (signs in, writes nothing).
+# - Merges to main that change design/store/, or a manual "sync": make the store match.
+# Nothing runs until design/store/listing.toml exists (face-publish creates it).
+# Store access is off until the repository variable STORE_SYNC is "on" and listing.toml has
+# [store] app_id. Secrets: GARMIN_USERNAME, GARMIN_PASSWORD (an account without two-step
+# sign-in; the same ones the SDK download uses).
+name: Store listing
+
+on:
+  pull_request:
+    paths: ["design/store/**", "tools/store_sync.py"]
+  push:
+    branches: [main]
+    paths: ["design/store/**", "tools/store_sync.py"]
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      mode:
+        type: choice
+        options: [check, sync]
+        default: check
+
+jobs:
+  store:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+      - name: No listing yet
+        if: hashFiles('design/store/listing.toml') == ''
+        run: echo "design/store/listing.toml doesn't exist yet; nothing to validate or sync."
+      - name: Validate
+        if: hashFiles('design/store/listing.toml') != ''
+        run: python tools/store_sync.py validate
+      - name: Check
+        if: hashFiles('design/store/listing.toml') != '' && vars.STORE_SYNC == 'on' && (github.event_name == 'pull_request' || github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'check'))
+        env:
+          GARMIN_USERNAME: ${{ secrets.GARMIN_USERNAME }}
+          GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
+        run: python tools/store_sync.py check
+      - name: Sync
+        if: hashFiles('design/store/listing.toml') != '' && vars.STORE_SYNC == 'on' && (github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'sync'))
+        env:
+          GARMIN_USERNAME: ${{ secrets.GARMIN_USERNAME }}
+          GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
+        run: python tools/store_sync.py sync

@@ -1,0 +1,485 @@
+# Kegel Trainer on the Connect IQ Store. The repository is the source: change the listing here,
+# not under Edit Details, or the next sync puts this back (face-publish skill, tools/store_sync.py).
+# Store limits: title 50 characters, description 4000, hero 1440x720 under 2 MB, cover 500x500
+# under 300 KB, device icons 128x128 under 150 KB, 1 to 5 screens under 150 KB each.
+# Screens are shared by every language; only the texts and the hero are per language.
+# "tagline" is ours (the hero's second line); the store ignores it.
+# category/subcategory are the store's keys (check prints the live ones and the valid list).
+
+[store]
+app_id = "7dfb67e6-aa36-45f9-8895-dd80da66e2bf"
+
+[[languages]]
+locale = "en"
+title = "Kegel Trainer"
+tagline = "A simple, discreet timer for pelvic floor exercises"
+hero_image = "hero.png"
+description = """
+Kegel Trainer is a simple, discreet guide for your pelvic floor exercises, right on your wrist. Press start, tighten when the arc turns red, relax when it turns green, and let the vibration tell you when to switch.
+
+- Starts with 10 repetitions: contract for 10 seconds, relax for 5. Change any of it to suit you.
+- Set the contraction time and the relax time (1 to 60 seconds each), up to 50 repetitions per series and up to 10 series, in the Connect IQ app.
+- A colour arc shows the time left: red to contract, green to relax. A 3-second countdown gives you time to get ready.
+- A short vibration at every change and a longer one when you finish, so you never have to look.
+- Start with the START button or, on touch screens, a tap. Works on round and square screens.
+- When you finish, you can save the workout as an ordinary Garmin activity, with a name you choose and a type such as Yoga, Cardio, Flexibility, Breathing or General.
+
+No account, no internet access, no tracking. Workouts are saved only as an ordinary Garmin activity in your own Garmin Connect (you can switch recording off in settings).
+
+Exercise timing only. This is not medical advice; ask a doctor before starting a pelvic floor program, and stop if you feel pain.
+
+Want 10 ready-made programs, a pulse step and weekly progress? See Kegel Trainer Pro.
+
+Available in 18 languages · Compatible with 100+ Garmin devices
+"""
+
+[[languages]]
+locale = "de"
+title = "Kegel Trainer"
+tagline = "Ein einfacher, diskreter Timer fürs Beckenbodentraining"
+hero_image = "de/hero.png"
+description = """
+Kegel Trainer ist eine einfache, diskrete Anleitung für dein Beckenbodentraining, direkt am Handgelenk. Starten, anspannen, wenn der Bogen rot wird, entspannen, wenn er grün wird, und die Vibration sagt dir, wann du wechseln sollst.
+
+- Los geht es mit 10 Wiederholungen: 10 Sekunden anspannen, 5 Sekunden entspannen. Alles lässt sich nach deinen Wünschen ändern.
+- Stelle Anspannungs- und Entspannungszeit (je 1 bis 60 Sekunden), bis zu 50 Wiederholungen pro Serie und bis zu 10 Serien in der Connect IQ App ein.
+- Ein Farbbogen zeigt die verbleibende Zeit: rot zum Anspannen, grün zum Entspannen. Ein Countdown von 3 Sekunden gibt dir Zeit, dich bereitzumachen.
+- Eine kurze Vibration bei jedem Wechsel und eine längere zum Abschluss, damit du nie hinschauen musst.
+- Starte mit der START-Taste oder auf Touchscreens mit einem Tippen. Funktioniert auf runden und eckigen Displays.
+- Nach dem Training kannst du es als normale Garmin-Aktivität speichern, mit einem Namen deiner Wahl und einem Typ wie Yoga, Cardio, Flexibilität, Atmung oder Allgemein.
+
+Kein Konto, kein Internetzugriff, kein Tracking. Trainings werden nur als normale Garmin-Aktivität in deinem eigenen Garmin Connect gespeichert (die Aufzeichnung lässt sich in den Einstellungen ausschalten).
+
+Nur ein Trainings-Timer. Dies ist keine medizinische Beratung; sprich vor dem Start eines Beckenbodenprogramms mit einem Arzt und höre bei Schmerzen auf.
+
+Du möchtest 10 fertige Programme, einen Puls-Schritt und den Wochenfortschritt? Schau dir Kegel Trainer Pro an.
+
+In 18 Sprachen verfügbar · Kompatibel mit über 100 Garmin-Geräten
+"""
+
+[[languages]]
+locale = "fr"
+title = "Kegel Trainer"
+tagline = "Un minuteur simple et discret pour le plancher pelvien"
+hero_image = "fr/hero.png"
+description = """
+Kegel Trainer est un guide simple et discret pour vos exercices du plancher pelvien, directement au poignet. Lancez-le, contractez quand l'arc devient rouge, relâchez quand il devient vert, et laissez la vibration vous dire quand changer.
+
+- Il démarre avec 10 répétitions : contracter 10 secondes, relâcher 5. Vous pouvez tout modifier à votre convenance.
+- Réglez le temps de contraction et de relâchement (de 1 à 60 secondes chacun), jusqu'à 50 répétitions par série et jusqu'à 10 séries, dans l'application Connect IQ.
+- Un arc de couleur indique le temps restant : rouge pour contracter, vert pour relâcher. Un compte à rebours de 3 secondes vous laisse le temps de vous préparer.
+- Une courte vibration à chaque changement et une plus longue à la fin, pour ne jamais avoir à regarder.
+- Démarrez avec le bouton START ou, sur les écrans tactiles, d'un simple toucher. Fonctionne sur les écrans ronds et carrés.
+- À la fin, vous pouvez enregistrer la séance comme une activité Garmin ordinaire, avec le nom de votre choix et un type comme Yoga, Cardio, Flexibilité, Respiration ou Général.
+
+Aucun compte, aucun accès à Internet, aucun suivi. Les séances sont enregistrées uniquement comme une activité Garmin ordinaire dans votre propre Garmin Connect (vous pouvez désactiver l'enregistrement dans les réglages).
+
+Minuteur d'exercice uniquement. Ce n'est pas un avis médical ; demandez conseil à un médecin avant de commencer un programme du plancher pelvien et arrêtez en cas de douleur.
+
+Envie de 10 programmes prêts à l'emploi, d'une étape de pulsion et d'un suivi hebdomadaire ? Découvrez Kegel Trainer Pro.
+
+Disponible en 18 langues · Compatible avec plus de 100 appareils Garmin
+"""
+
+[[languages]]
+locale = "es"
+title = "Kegel Trainer"
+tagline = "Un temporizador sencillo y discreto para el suelo pélvico"
+hero_image = "es/hero.png"
+description = """
+Kegel Trainer es una guía sencilla y discreta para tus ejercicios del suelo pélvico, directamente en la muñeca. Pulsa iniciar, contrae cuando el arco se ponga rojo, relaja cuando se ponga verde y deja que la vibración te diga cuándo cambiar.
+
+- Empieza con 10 repeticiones: contrae 10 segundos, relaja 5. Puedes cambiarlo todo a tu gusto.
+- Ajusta el tiempo de contracción y de relajación (de 1 a 60 segundos cada uno), hasta 50 repeticiones por serie y hasta 10 series, en la app Connect IQ.
+- Un arco de color muestra el tiempo restante: rojo para contraer, verde para relajar. Una cuenta atrás de 3 segundos te da tiempo para prepararte.
+- Una vibración corta en cada cambio y una más larga al terminar, para que nunca tengas que mirar.
+- Empieza con el botón START o, en pantallas táctiles, con un toque. Funciona en pantallas redondas y cuadradas.
+- Al terminar, puedes guardar el entrenamiento como una actividad Garmin normal, con el nombre que elijas y un tipo como Yoga, Cardio, Flexibilidad, Respiración o General.
+
+Sin cuenta, sin acceso a internet, sin seguimiento. Los entrenamientos se guardan solo como una actividad Garmin normal en tu propio Garmin Connect (puedes desactivar la grabación en los ajustes).
+
+Solo un temporizador de ejercicios. No es consejo médico; consulta a un médico antes de empezar un programa de suelo pélvico y para si sientes dolor.
+
+¿Quieres 10 programas listos, un paso de pulso y el progreso semanal? Echa un vistazo a Kegel Trainer Pro.
+
+Disponible en 18 idiomas · Compatible con más de 100 dispositivos Garmin
+"""
+
+[[languages]]
+locale = "it"
+title = "Kegel Trainer"
+tagline = "Un timer semplice e discreto per il pavimento pelvico"
+hero_image = "it/hero.png"
+description = """
+Kegel Trainer è una guida semplice e discreta per gli esercizi del pavimento pelvico, direttamente al polso. Premi avvio, contrai quando l'arco diventa rosso, rilassati quando diventa verde e lascia che la vibrazione ti dica quando cambiare.
+
+- Parte con 10 ripetizioni: contrai per 10 secondi, rilassati per 5. Puoi cambiare tutto a piacere.
+- Imposta il tempo di contrazione e di rilassamento (da 1 a 60 secondi ciascuno), fino a 50 ripetizioni per serie e fino a 10 serie, nell'app Connect IQ.
+- Un arco colorato mostra il tempo rimasto: rosso per contrarre, verde per rilassare. Un conto alla rovescia di 3 secondi ti dà il tempo di prepararti.
+- Una breve vibrazione a ogni cambio e una più lunga alla fine, così non devi mai guardare.
+- Avvia con il pulsante START o, sugli schermi touch, con un tocco. Funziona su schermi rotondi e quadrati.
+- Alla fine puoi salvare l'allenamento come una normale attività Garmin, con il nome che scegli e un tipo come Yoga, Cardio, Flessibilità, Respirazione o Generale.
+
+Nessun account, nessun accesso a internet, nessun tracciamento. Gli allenamenti vengono salvati solo come una normale attività Garmin nel tuo Garmin Connect (puoi disattivare la registrazione nelle impostazioni).
+
+Solo un timer per gli esercizi. Non è un consiglio medico; consulta un medico prima di iniziare un programma per il pavimento pelvico e interrompi in caso di dolore.
+
+Vuoi 10 programmi pronti, un passo a impulsi e i progressi settimanali? Scopri Kegel Trainer Pro.
+
+Disponibile in 18 lingue · Compatibile con oltre 100 dispositivi Garmin
+"""
+
+[[languages]]
+locale = "pt_BR"
+title = "Kegel Trainer"
+tagline = "Um temporizador simples e discreto para o assoalho pélvico"
+hero_image = "pt_BR/hero.png"
+description = """
+O Kegel Trainer é um guia simples e discreto para seus exercícios do assoalho pélvico, direto no pulso. Toque em iniciar, contraia quando o arco ficar vermelho, relaxe quando ficar verde e deixe a vibração avisar quando trocar.
+
+- Começa com 10 repetições: contraia por 10 segundos, relaxe por 5. Você pode mudar tudo como preferir.
+- Defina o tempo de contração e de relaxamento (de 1 a 60 segundos cada), até 50 repetições por série e até 10 séries, no app Connect IQ.
+- Um arco colorido mostra o tempo restante: vermelho para contrair, verde para relaxar. Uma contagem regressiva de 3 segundos dá tempo para se preparar.
+- Uma vibração curta a cada mudança e uma mais longa ao terminar, para você nunca precisar olhar.
+- Comece com o botão START ou, em telas sensíveis ao toque, com um toque. Funciona em telas redondas e quadradas.
+- Ao terminar, você pode salvar o treino como uma atividade Garmin comum, com o nome que escolher e um tipo como Yoga, Cardio, Flexibilidade, Respiração ou Geral.
+
+Sem conta, sem acesso à internet, sem rastreamento. Os treinos são salvos apenas como uma atividade Garmin comum no seu próprio Garmin Connect (você pode desativar a gravação nas configurações).
+
+Apenas um temporizador de exercícios. Não é orientação médica; consulte um médico antes de começar um programa para o assoalho pélvico e pare se sentir dor.
+
+Quer 10 programas prontos, uma etapa de pulso e o progresso semanal? Conheça o Kegel Trainer Pro.
+
+Disponível em 18 idiomas · Compatível com mais de 100 dispositivos Garmin
+"""
+
+[[languages]]
+locale = "nl"
+title = "Kegel Trainer"
+tagline = "Een eenvoudige, discrete timer voor bekkenbodemoefeningen"
+hero_image = "nl/hero.png"
+description = """
+Kegel Trainer is een eenvoudige, discrete gids voor je bekkenbodemoefeningen, rechtstreeks op je pols. Druk op start, span aan als de boog rood wordt, ontspan als hij groen wordt en laat de trilling je vertellen wanneer je moet wisselen.
+
+- Begint met 10 herhalingen: 10 seconden aanspannen, 5 seconden ontspannen. Je kunt alles naar wens aanpassen.
+- Stel de aanspan- en ontspantijd (elk 1 tot 60 seconden), tot 50 herhalingen per serie en tot 10 series in via de Connect IQ-app.
+- Een kleurenboog toont de resterende tijd: rood om aan te spannen, groen om te ontspannen. Een aftelling van 3 seconden geeft je tijd om je klaar te maken.
+- Een korte trilling bij elke wissel en een langere aan het eind, zodat je nooit hoeft te kijken.
+- Start met de START-knop of, op touchscreens, met een tik. Werkt op ronde en vierkante schermen.
+- Na afloop kun je de training opslaan als een gewone Garmin-activiteit, met een naam naar keuze en een type zoals Yoga, Cardio, Flexibiliteit, Ademhaling of Algemeen.
+
+Geen account, geen internettoegang, geen tracking. Trainingen worden alleen opgeslagen als een gewone Garmin-activiteit in je eigen Garmin Connect (je kunt opnemen uitschakelen in de instellingen).
+
+Alleen een oefentimer. Dit is geen medisch advies; vraag een arts om raad voordat je met een bekkenbodemprogramma begint en stop bij pijn.
+
+Wil je 10 kant-en-klare programma's, een pulsstap en wekelijkse voortgang? Bekijk Kegel Trainer Pro.
+
+Beschikbaar in 18 talen · Compatibel met meer dan 100 Garmin-apparaten
+"""
+
+[[languages]]
+locale = "ja"
+title = "Kegel Trainer"
+tagline = "シンプルで目立たない骨盤底筋タイマー"
+hero_image = "ja/hero.png"
+description = """
+Kegel Trainerは、骨盤底筋のエクササイズを手首でガイドする、シンプルで目立たないアプリです。開始を押し、円弧が赤になったら力を入れ、緑になったら緩めます。切り替えのタイミングはバイブレーションが知らせます。
+
+- 最初の設定は10回：10秒収縮して5秒リラックス。すべて自由に変更できます。
+- 収縮時間とリラックス時間（各1〜60秒）、1セットあたり最大50回、最大10セットをConnect IQアプリで設定できます。
+- 色の円弧で残り時間を表示：赤は収縮、緑はリラックス。3秒のカウントダウンで準備できます。
+- 切り替えごとに短く、終了時には長くバイブレーションが鳴るので、画面を見続ける必要がありません。
+- STARTボタン、またはタッチスクリーンならタップで開始。丸型と角型の画面に対応しています。
+- 終了後は、通常のGarminアクティビティとしてワークアウトを保存できます。名前は自由に付けられ、ヨガ、カーディオ、柔軟性、呼吸、一般などの種類を選べます。
+
+アカウント不要、インターネット接続なし、トラッキングなし。ワークアウトは、あなた自身のGarmin Connectに通常のGarminアクティビティとして保存されるだけです（設定で記録をオフにできます）。
+
+エクササイズのタイマーです。医学的なアドバイスではありません。骨盤底筋プログラムを始める前に医師に相談し、痛みを感じたら中止してください。
+
+10のすぐ使えるプログラム、パルスのステップ、週間進捗が欲しい方は、Kegel Trainer Proをご覧ください。
+
+18言語対応 · 100以上のGarminデバイスに対応
+"""
+
+[[languages]]
+locale = "ko"
+title = "Kegel Trainer"
+tagline = "간단하고 은밀한 골반저근 운동 타이머"
+hero_image = "ko/hero.png"
+description = """
+Kegel Trainer는 손목에서 골반저근 운동을 안내하는 간단하고 은밀한 앱입니다. 시작을 누르고, 원호가 빨간색이 되면 힘을 주고, 초록색이 되면 이완하세요. 바꿀 때는 진동이 알려 줍니다.
+
+- 10회로 시작합니다. 10초 수축, 5초 이완. 모두 원하는 대로 바꿀 수 있습니다.
+- 수축 시간과 이완 시간(각 1~60초), 세트당 최대 50회, 최대 10세트를 Connect IQ 앱에서 설정할 수 있습니다.
+- 색상 원호로 남은 시간을 표시합니다. 빨강은 수축, 초록은 이완입니다. 3초 카운트다운으로 준비할 시간을 줍니다.
+- 단계가 바뀔 때마다 짧은 진동, 끝날 때는 더 긴 진동이 울려 화면을 계속 볼 필요가 없습니다.
+- START 버튼으로 시작하거나, 터치스크린에서는 화면을 탭하세요. 원형과 사각형 화면 모두에서 작동합니다.
+- 끝나면 운동을 일반 Garmin 활동으로 저장할 수 있으며, 원하는 이름과 요가, 카디오, 유연성, 호흡, 일반 같은 유형을 정할 수 있습니다.
+
+계정 없음, 인터넷 접속 없음, 추적 없음. 운동 기록은 본인의 Garmin Connect에 일반 Garmin 활동으로만 저장됩니다(설정에서 기록을 끌 수 있습니다).
+
+운동 타이머일 뿐 의학적 조언이 아닙니다. 골반저근 프로그램을 시작하기 전에 의사와 상담하고, 통증이 느껴지면 중단하세요.
+
+준비된 10가지 프로그램, 펄스 단계, 주간 진행 기록이 필요하신가요? Kegel Trainer Pro를 확인해 보세요.
+
+18개 언어 지원 · 100개 이상의 Garmin 기기와 호환
+"""
+
+[[languages]]
+locale = "zh_CN"
+title = "Kegel Trainer"
+tagline = "简单、低调的盆底肌计时器"
+hero_image = "zh_CN/hero.png"
+description = """
+Kegel Trainer 是一款简单、低调的盆底肌训练向导，就在您的手腕上。按下开始，圆弧变红时收紧，变绿时放松，何时切换由振动告诉您。
+
+- 默认 10 次重复：收缩 10 秒，放松 5 秒。一切都可以按您的需要修改。
+- 可在 Connect IQ 应用中设置收缩和放松时间（各 1 到 60 秒）、每组最多 50 次重复和最多 10 组。
+- 彩色圆弧显示剩余时间：红色为收缩，绿色为放松。3 秒倒计时让您有时间做好准备。
+- 每次切换有短振动，结束时有较长振动，让您无需一直看屏幕。
+- 用 START 键开始，触屏设备上点一下屏幕即可。适用于圆形和方形屏幕。
+- 结束后，您可以把训练保存为普通的 Garmin 活动，名称自定，类型可选瑜伽、有氧、柔韧、呼吸或通用。
+
+无需账户，无需联网，无任何跟踪。训练仅会作为普通 Garmin 活动保存到您自己的 Garmin Connect（可在设置中关闭记录）。
+
+仅为训练计时器，不构成医疗建议。开始盆底肌训练前请咨询医生，如感到疼痛请立即停止。
+
+想要 10 个现成计划、脉冲步骤和每周进度？请看看 Kegel Trainer Pro。
+
+支持 18 种语言 · 兼容 100 多款 Garmin 设备
+"""
+
+[[languages]]
+locale = "zh_TW"
+title = "Kegel Trainer"
+tagline = "簡單、低調的骨盆底肌計時器"
+hero_image = "zh_TW/hero.png"
+description = """
+Kegel Trainer 是一款簡單、低調的骨盆底肌訓練嚮導，就在您的手腕上。按下開始，圓弧變紅時收緊，變綠時放鬆，何時切換由震動告訴您。
+
+- 預設 10 次重複：收縮 10 秒，放鬆 5 秒。一切都可以依您的需要修改。
+- 可在 Connect IQ 應用程式中設定收縮和放鬆時間（各 1 到 60 秒）、每組最多 50 次重複和最多 10 組。
+- 彩色圓弧顯示剩餘時間：紅色為收縮，綠色為放鬆。3 秒倒數讓您有時間做好準備。
+- 每次切換有短震動，結束時有較長震動，讓您不必一直看螢幕。
+- 用 START 鍵開始，觸控裝置上點一下螢幕即可。適用於圓形和方形螢幕。
+- 結束後，您可以把訓練儲存為一般的 Garmin 活動，名稱自訂，類型可選瑜伽、有氧、柔軟度、呼吸或一般。
+
+不需帳號、不需連網、沒有任何追蹤。訓練只會以一般 Garmin 活動的形式儲存到您自己的 Garmin Connect（可在設定中關閉記錄）。
+
+僅為訓練計時器，並非醫療建議。開始骨盆底肌訓練前請諮詢醫師，如感到疼痛請立即停止。
+
+想要 10 個現成計畫、脈衝步驟和每週進度？請看看 Kegel Trainer Pro。
+
+支援 18 種語言 · 相容 100 多款 Garmin 裝置
+"""
+
+[[languages]]
+locale = "pl"
+title = "Kegel Trainer"
+tagline = "Prosty, dyskretny zegar do ćwiczeń mięśni dna miednicy"
+hero_image = "pl/hero.png"
+description = """
+Kegel Trainer to prosty, dyskretny przewodnik po ćwiczeniach mięśni dna miednicy, prosto na nadgarstku. Naciśnij start, napnij mięśnie, gdy łuk zrobi się czerwony, rozluźnij, gdy będzie zielony, a wibracja powie Ci, kiedy zmienić.
+
+- Zaczyna od 10 powtórzeń: napinaj przez 10 sekund, rozluźniaj przez 5. Wszystko możesz zmienić według własnych potrzeb.
+- Czas napinania i rozluźniania (po 1 do 60 sekund), do 50 powtórzeń w serii i do 10 serii ustawisz w aplikacji Connect IQ.
+- Kolorowy łuk pokazuje pozostały czas: czerwony do napinania, zielony do rozluźniania. 3-sekundowe odliczanie daje czas na przygotowanie.
+- Krótka wibracja przy każdej zmianie i dłuższa na koniec, więc nie musisz patrzeć na ekran.
+- Zacznij przyciskiem START lub, na ekranach dotykowych, dotknięciem. Działa na okrągłych i kwadratowych ekranach.
+- Po zakończeniu możesz zapisać trening jako zwykłą aktywność Garmin, z wybraną nazwą i typem, takim jak Yoga, Cardio, Elastyczność, Oddychanie lub Ogólne.
+
+Bez konta, bez dostępu do internetu, bez śledzenia. Treningi są zapisywane wyłącznie jako zwykła aktywność Garmin w Twoim własnym Garmin Connect (zapis możesz wyłączyć w ustawieniach).
+
+Wyłącznie timer ćwiczeń. To nie jest porada medyczna; przed rozpoczęciem programu ćwiczeń dna miednicy skonsultuj się z lekarzem i przerwij, jeśli poczujesz ból.
+
+Chcesz 10 gotowych programów, krok z pulsem i tygodniowy postęp? Sprawdź Kegel Trainer Pro.
+
+Dostępna w 18 językach · Zgodna z ponad 100 urządzeniami Garmin
+"""
+
+[[languages]]
+locale = "sv"
+title = "Kegel Trainer"
+tagline = "En enkel, diskret timer för bäckenbottenövningar"
+hero_image = "sv/hero.png"
+description = """
+Kegel Trainer är en enkel, diskret guide för dina bäckenbottenövningar, direkt på handleden. Tryck på start, spänn när bågen blir röd, slappna av när den blir grön och låt vibrationen tala om när du ska byta.
+
+- Börjar med 10 repetitioner: spänn i 10 sekunder, slappna av i 5. Du kan ändra allt efter eget behov.
+- Ställ in spänntid och vilotid (1 till 60 sekunder vardera), upp till 50 repetitioner per set och upp till 10 set i Connect IQ-appen.
+- En färgad båge visar tiden som är kvar: rött för att spänna, grönt för att slappna av. En nedräkning på 3 sekunder ger dig tid att göra dig redo.
+- En kort vibration vid varje byte och en längre när du är klar, så att du aldrig behöver titta.
+- Starta med START-knappen eller, på pekskärmar, med ett tryck. Fungerar på runda och fyrkantiga skärmar.
+- När du är klar kan du spara passet som en vanlig Garmin-aktivitet, med ett namn du väljer och en typ som Yoga, Cardio, Flexibilitet, Andning eller Allmänt.
+
+Inget konto, ingen internetåtkomst, ingen spårning. Passen sparas bara som en vanlig Garmin-aktivitet i din egen Garmin Connect (du kan stänga av inspelningen i inställningarna).
+
+Endast en träningstimer. Det här är inte medicinsk rådgivning; fråga en läkare innan du börjar ett bäckenbottenprogram och sluta om du känner smärta.
+
+Vill du ha 10 färdiga program, ett pulssteg och veckans framsteg? Se Kegel Trainer Pro.
+
+Finns på 18 språk · Kompatibel med över 100 Garmin-enheter
+"""
+
+[[languages]]
+locale = "da"
+title = "Kegel Trainer"
+tagline = "En enkel, diskret timer til bækkenbundsøvelser"
+hero_image = "da/hero.png"
+description = """
+Kegel Trainer er en enkel, diskret guide til dine bækkenbundsøvelser, lige på håndleddet. Tryk start, spænd, når buen bliver rød, slap af, når den bliver grøn, og lad vibrationen fortælle dig, hvornår du skal skifte.
+
+- Starter med 10 gentagelser: spænd i 10 sekunder, slap af i 5. Du kan ændre alt efter behov.
+- Indstil spændetid og hviletid (1 til 60 sekunder hver), op til 50 gentagelser pr. sæt og op til 10 sæt i Connect IQ-appen.
+- En farvet bue viser den resterende tid: rød til at spænde, grøn til at slappe af. En nedtælling på 3 sekunder giver dig tid til at gøre dig klar.
+- En kort vibration ved hvert skift og en længere, når du er færdig, så du aldrig behøver at kigge.
+- Start med START-knappen eller, på touchskærme, med et tryk. Fungerer på runde og firkantede skærme.
+- Når du er færdig, kan du gemme træningen som en almindelig Garmin-aktivitet, med et navn efter eget valg og en type som Yoga, Cardio, Smidighed, Vejrtrækning eller Generelt.
+
+Ingen konto, ingen internetadgang, ingen sporing. Træninger gemmes kun som en almindelig Garmin-aktivitet i din egen Garmin Connect (du kan slå optagelsen fra i indstillingerne).
+
+Kun en øvelsestimer. Dette er ikke lægeligt råd; tal med en læge, før du starter et bækkenbundsprogram, og stop, hvis du får smerter.
+
+Vil du have 10 færdige programmer, et pulstrin og ugentlige fremskridt? Se Kegel Trainer Pro.
+
+Fås på 18 sprog · Kompatibel med over 100 Garmin-enheder
+"""
+
+[[languages]]
+locale = "nb"
+title = "Kegel Trainer"
+tagline = "En enkel, diskret timer for bekkenbunnsøvelser"
+hero_image = "nb/hero.png"
+description = """
+Kegel Trainer er en enkel, diskret guide for bekkenbunnsøvelsene dine, rett på håndleddet. Trykk start, stram når buen blir rød, slapp av når den blir grønn, og la vibrasjonen si fra når du skal bytte.
+
+- Starter med 10 repetisjoner: stram i 10 sekunder, slapp av i 5. Du kan endre alt etter behov.
+- Still inn stramtid og hviletid (1 til 60 sekunder hver), opptil 50 repetisjoner per serie og opptil 10 serier i Connect IQ-appen.
+- En farget bue viser tiden som er igjen: rød for å stramme, grønn for å slappe av. En nedtelling på 3 sekunder gir deg tid til å gjøre deg klar.
+- En kort vibrasjon ved hvert bytte og en lengre når du er ferdig, slik at du aldri trenger å se på skjermen.
+- Start med START-knappen eller, på berøringsskjermer, med et trykk. Fungerer på runde og firkantede skjermer.
+- Når du er ferdig, kan du lagre økten som en vanlig Garmin-aktivitet, med et navn du velger og en type som Yoga, Cardio, Smidighet, Pust eller Generelt.
+
+Ingen konto, ingen internettilgang, ingen sporing. Øktene lagres bare som en vanlig Garmin-aktivitet i din egen Garmin Connect (du kan slå av opptaket i innstillingene).
+
+Bare en øvelsestimer. Dette er ikke medisinsk rådgivning; snakk med en lege før du starter et bekkenbunnsprogram, og stopp hvis du kjenner smerte.
+
+Vil du ha 10 ferdige programmer, et pulstrinn og ukentlig fremgang? Se Kegel Trainer Pro.
+
+Tilgjengelig på 18 språk · Kompatibel med over 100 Garmin-enheter
+"""
+
+[[languages]]
+locale = "fi"
+title = "Kegel Trainer"
+tagline = "Yksinkertainen ja huomaamaton ajastin lantionpohjaharjoituksiin"
+hero_image = "fi/hero.png"
+description = """
+Kegel Trainer on yksinkertainen ja huomaamaton opas lantionpohjaharjoituksiisi, suoraan ranteessa. Paina aloita, supista kun kaari muuttuu punaiseksi, rentoudu kun se muuttuu vihreäksi, ja anna värinän kertoa, milloin vaihdetaan.
+
+- Alkaa 10 toistolla: supista 10 sekuntia, rentoudu 5. Voit muuttaa kaiken mieleiseksesi.
+- Aseta supistus- ja rentoutusaika (1–60 sekuntia kumpikin), enintään 50 toistoa sarjassa ja enintään 10 sarjaa Connect IQ -sovelluksessa.
+- Värikaari näyttää jäljellä olevan ajan: punainen supistukselle, vihreä rentoutukselle. 3 sekunnin lähtölaskenta antaa aikaa valmistautua.
+- Lyhyt värinä jokaisessa vaihdossa ja pidempi lopussa, joten sinun ei tarvitse katsoa näyttöä.
+- Aloita START-painikkeella tai kosketusnäytöllä napautuksella. Toimii pyöreillä ja neliönmuotoisilla näytöillä.
+- Lopuksi voit tallentaa harjoituksen tavallisena Garmin-aktiviteettina, valitsemallasi nimellä ja tyypillä, kuten Jooga, Cardio, Notkeus, Hengitys tai Yleinen.
+
+Ei tiliä, ei internetyhteyttä, ei seurantaa. Harjoitukset tallennetaan vain tavallisena Garmin-aktiviteettina omaan Garmin Connectiisi (tallennuksen voi kytkeä pois asetuksista).
+
+Vain harjoitusajastin. Tämä ei ole lääketieteellinen neuvo; kysy lääkäriltä ennen lantionpohjaohjelman aloittamista ja lopeta, jos tunnet kipua.
+
+Haluatko 10 valmista ohjelmaa, pulssivaiheen ja viikkoedistymisen? Katso Kegel Trainer Pro.
+
+Saatavilla 18 kielellä · Yhteensopiva yli 100 Garmin-laitteen kanssa
+"""
+
+[[languages]]
+locale = "cs"
+title = "Kegel Trainer"
+tagline = "Jednoduchý časovač pro cvičení pánevního dna"
+hero_image = "cs/hero.png"
+description = """
+Kegel Trainer je jednoduchý a nenápadný průvodce cvičením pánevního dna přímo na zápěstí. Stiskněte start, stáhněte, když se oblouk zbarví červeně, uvolněte, když zezelená, a vibrace vám řekne, kdy přepnout.
+
+- Začíná s 10 opakováními: 10 sekund stahovat, 5 sekund uvolňovat. Vše si můžete upravit podle sebe.
+- Čas stahování a uvolnění (po 1 až 60 sekundách), až 50 opakování v sérii a až 10 sérií nastavíte v aplikaci Connect IQ.
+- Barevný oblouk ukazuje zbývající čas: červený pro stahování, zelený pro uvolnění. Třísekundové odpočítávání vám dá čas se připravit.
+- Krátká vibrace při každé změně a delší na konci, takže se nemusíte dívat na displej.
+- Spusťte tlačítkem START nebo na dotykových displejích klepnutím. Funguje na kulatých i hranatých displejích.
+- Po skončení můžete trénink uložit jako běžnou aktivitu Garmin s názvem podle vašeho výběru a typem, například Yoga, Cardio, Flexibilita, Dýchání nebo Obecné.
+
+Žádný účet, žádný přístup k internetu, žádné sledování. Tréninky se ukládají pouze jako běžná aktivita Garmin do vašeho vlastního Garmin Connect (záznam můžete v nastavení vypnout).
+
+Pouze časovač cvičení. Nejde o lékařskou radu; před zahájením programu pro pánevní dno se poraďte s lékařem a při bolesti přestaňte.
+
+Chcete 10 hotových programů, pulzní krok a týdenní pokrok? Podívejte se na Kegel Trainer Pro.
+
+K dispozici v 18 jazycích · Kompatibilní s více než 100 zařízeními Garmin
+"""
+
+[[languages]]
+locale = "ru"
+title = "Kegel Trainer"
+tagline = "Простой и неприметный таймер для тазового дна"
+hero_image = "ru/hero.png"
+description = """
+Kegel Trainer — простой и неприметный помощник для упражнений на мышцы тазового дна прямо на запястье. Нажмите старт, напрягайтесь, когда дуга красная, расслабляйтесь, когда она зелёная, а вибрация подскажет, когда переключаться.
+
+- Начинает с 10 повторений: 10 секунд напряжения, 5 секунд расслабления. Всё можно изменить под себя.
+- Время напряжения и расслабления (по 1–60 секунд), до 50 повторений в подходе и до 10 подходов настраиваются в приложении Connect IQ.
+- Цветная дуга показывает оставшееся время: красная для напряжения, зелёная для расслабления. Обратный отсчёт в 3 секунды даёт время приготовиться.
+- Короткая вибрация при каждой смене и более долгая в конце, чтобы вам не приходилось смотреть на экран.
+- Запускайте кнопкой START или касанием на сенсорных экранах. Работает на круглых и квадратных экранах.
+- По окончании тренировку можно сохранить как обычную активность Garmin с выбранным вами названием и типом, например Йога, Кардио, Гибкость, Дыхание или Общее.
+
+Без аккаунта, без доступа в интернет, без отслеживания. Тренировки сохраняются только как обычная активность Garmin в вашем собственном Garmin Connect (запись можно отключить в настройках).
+
+Только таймер для упражнений. Это не медицинская рекомендация; перед началом программы для тазового дна посоветуйтесь с врачом и прекратите при боли.
+
+Нужны 10 готовых программ, шаг с пульсом и недельный прогресс? Посмотрите Kegel Trainer Pro.
+
+Доступно на 18 языках · Совместимо с более чем 100 устройствами Garmin
+"""
+
+[images]
+cover = "cover.png"
+device_icon_64_color = "device_icon_64_color.png"
+device_icon_24_bit = "device_icon_24_bit.png"
+screens = [
+  "device_ready.jpg",
+  "device_countdown.jpg",
+  "device_contract.jpg",
+  "device_relax.jpg",
+  "device_complete.jpg",
+]
+
+[category]
+name = "HEALTH_AND_FITNESS"
+subcategory = "OTHER"
+
+[privacy]
+collects_user_data = false
+policy_url = ""
+
+[hardware]
+ant_plus_profiles = []
+product_url = ""
+
+[regions]
+countries = []
+
+[contact]
+# Shown on the listing: the address buyers may write to.
+email = "fulippo@gmail.com"
+source_url = ""
+video_url = ""
+review_notifications = true
+app_migration = true
+
+[monetization]
+# Free app: sync keeps it free (and refuses to run if the dashboard says paid).
+paid = false
+
+[companion]
+ios_url = ""
+android_url = ""

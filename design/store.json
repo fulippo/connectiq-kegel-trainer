@@ -1,0 +1,67 @@
+{
+ "kind": "app",
+ "shape": "round",
+ "font": "barlow-condensed",
+ "colors": {
+  "ink": "#F2EEE6",
+  "dim": "#9C978C",
+  "accent": "#F2452D"
+ },
+ "device": "fr965",
+ "shots": {
+  "hero": {
+   "image": "design/shots/screen-contract.png"
+  },
+  "ready": {
+   "image": "design/shots/dev-ready.png"
+  },
+  "countdown": {
+   "image": "design/shots/dev-countdown.png"
+  },
+  "contract": {
+   "image": "design/shots/dev-contract.png"
+  },
+  "relax": {
+   "image": "design/shots/dev-relax.png"
+  },
+  "complete": {
+   "image": "design/shots/dev-complete.png"
+  }
+ },
+ "hero": "hero",
+ "cover": "hero",
+ "devices": [
+  {
+   "name": "ready",
+   "device": "fr965",
+   "shot": "ready"
+  },
+  {
+   "name": "countdown",
+   "device": "fr965",
+   "shot": "countdown"
+  },
+  {
+   "name": "contract",
+   "device": "fr965",
+   "shot": "contract"
+  },
+  {
+   "name": "relax",
+   "device": "fr965",
+   "shot": "relax"
+  },
+  {
+   "name": "complete",
+   "device": "fr965",
+   "shot": "complete"
+  }
+ ],
+ "screens": [
+  "device_ready.jpg",
+  "device_countdown.jpg",
+  "device_contract.jpg",
+  "device_relax.jpg",
+  "device_complete.jpg"
+ ]
+}
