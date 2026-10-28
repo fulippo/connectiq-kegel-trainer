@@ -12,6 +12,7 @@ app_id = "7dfb67e6-aa36-45f9-8895-dd80da66e2bf"
 [[languages]]
 locale = "en"
 title = "Kegel Trainer"
+whats_new = "The start screen now appears fully in your language. A few small reliability fixes too."
 tagline = "A simple, discreet timer for pelvic floor exercises"
 hero_image = "hero.png"
 description = """
@@ -36,6 +37,7 @@ Available in 18 languages · Compatible with 100+ Garmin devices
 [[languages]]
 locale = "de"
 title = "Kegel Trainer"
+whats_new = "Der Startbildschirm erscheint jetzt vollständig in deiner Sprache. Dazu ein paar kleine Zuverlässigkeitsverbesserungen."
 tagline = "Ein einfacher, diskreter Timer fürs Beckenbodentraining"
 hero_image = "de/hero.png"
 description = """
@@ -60,6 +62,7 @@ In 18 Sprachen verfügbar · Kompatibel mit über 100 Garmin-Geräten
 [[languages]]
 locale = "fr"
 title = "Kegel Trainer"
+whats_new = "L'écran de démarrage s'affiche désormais entièrement dans votre langue. Quelques petites améliorations de fiabilité en plus."
 tagline = "Un minuteur simple et discret pour le plancher pelvien"
 hero_image = "fr/hero.png"
 description = """
@@ -84,6 +87,7 @@ Disponible en 18 langues · Compatible avec plus de 100 appareils Garmin
 [[languages]]
 locale = "es"
 title = "Kegel Trainer"
+whats_new = "La pantalla de inicio aparece ahora totalmente en tu idioma. Además, algunas pequeñas mejoras de fiabilidad."
 tagline = "Un temporizador sencillo y discreto para el suelo pélvico"
 hero_image = "es/hero.png"
 description = """
@@ -108,6 +112,7 @@ Disponible en 18 idiomas · Compatible con más de 100 dispositivos Garmin
 [[languages]]
 locale = "it"
 title = "Kegel Trainer"
+whats_new = "La schermata iniziale ora appare interamente nella tua lingua. In più, alcuni piccoli miglioramenti di affidabilità."
 tagline = "Un timer semplice e discreto per il pavimento pelvico"
 hero_image = "it/hero.png"
 description = """
@@ -132,6 +137,7 @@ Disponibile in 18 lingue · Compatibile con oltre 100 dispositivi Garmin
 [[languages]]
 locale = "pt_BR"
 title = "Kegel Trainer"
+whats_new = "A tela inicial agora aparece totalmente no seu idioma. Além disso, algumas pequenas melhorias de confiabilidade."
 tagline = "Um temporizador simples e discreto para o assoalho pélvico"
 hero_image = "pt_BR/hero.png"
 description = """
@@ -156,6 +162,7 @@ Disponível em 18 idiomas · Compatível com mais de 100 dispositivos Garmin
 [[languages]]
 locale = "nl"
 title = "Kegel Trainer"
+whats_new = "Het startscherm verschijnt nu volledig in je eigen taal. Plus een paar kleine betrouwbaarheidsverbeteringen."
 tagline = "Een eenvoudige, discrete timer voor bekkenbodemoefeningen"
 hero_image = "nl/hero.png"
 description = """
@@ -180,6 +187,7 @@ Beschikbaar in 18 talen · Compatibel met meer dan 100 Garmin-apparaten
 [[languages]]
 locale = "ja"
 title = "Kegel Trainer"
+whats_new = "スタート画面がすべてお使いの言語で表示されるようになりました。細かな安定性の改善も加えています。"
 tagline = "シンプルで目立たない骨盤底筋タイマー"
 hero_image = "ja/hero.png"
 description = """
@@ -204,6 +212,7 @@ Kegel Trainerは、骨盤底筋のエクササイズを手首でガイドする�
 [[languages]]
 locale = "ko"
 title = "Kegel Trainer"
+whats_new = "시작 화면이 이제 완전히 사용자의 언어로 나타납니다. 작은 안정성 개선도 포함되어 있습니다."
 tagline = "간단하고 은밀한 골반저근 운동 타이머"
 hero_image = "ko/hero.png"
 description = """
@@ -228,6 +237,7 @@ Kegel Trainer는 손목에서 골반저근 운동을 안내하는 간단하고 �
 [[languages]]
 locale = "zh_CN"
 title = "Kegel Trainer"
+whats_new = "开始屏幕现在完全以您的语言显示。另外还有一些小的稳定性改进。"
 tagline = "简单、低调的盆底肌计时器"
 hero_image = "zh_CN/hero.png"
 description = """
@@ -252,6 +262,7 @@ Kegel Trainer 是一款简单、低调的盆底肌训练向导，就在您的手
 [[languages]]
 locale = "zh_TW"
 title = "Kegel Trainer"
+whats_new = "開始畫面現在完全以您的語言顯示。另外還有一些小的穩定性改進。"
 tagline = "簡單、低調的骨盆底肌計時器"
 hero_image = "zh_TW/hero.png"
 description = """
@@ -276,6 +287,7 @@ Kegel Trainer 是一款簡單、低調的骨盆底肌訓練嚮導，就在您的
 [[languages]]
 locale = "pl"
 title = "Kegel Trainer"
+whats_new = "Ekran startowy pojawia się teraz w całości w Twoim języku. Do tego kilka drobnych poprawek niezawodności."
 tagline = "Prosty, dyskretny zegar do ćwiczeń mięśni dna miednicy"
 hero_image = "pl/hero.png"
 description = """
@@ -300,6 +312,7 @@ Dostępna w 18 językach · Zgodna z ponad 100 urządzeniami Garmin
 [[languages]]
 locale = "sv"
 title = "Kegel Trainer"
+whats_new = "Startskärmen visas nu helt på ditt språk. Dessutom några små förbättringar av tillförlitligheten."
 tagline = "En enkel, diskret timer för bäckenbottenövningar"
 hero_image = "sv/hero.png"
 description = """
@@ -324,6 +337,7 @@ Finns på 18 språk · Kompatibel med över 100 Garmin-enheter
 [[languages]]
 locale = "da"
 title = "Kegel Trainer"
+whats_new = "Startskærmen vises nu helt på dit sprog. Desuden et par små forbedringer af pålideligheden."
 tagline = "En enkel, diskret timer til bækkenbundsøvelser"
 hero_image = "da/hero.png"
 description = """
@@ -348,6 +362,7 @@ Fås på 18 sprog · Kompatibel med over 100 Garmin-enheder
 [[languages]]
 locale = "nb"
 title = "Kegel Trainer"
+whats_new = "Startskjermen vises nå helt på ditt språk. I tillegg noen små forbedringer av påliteligheten."
 tagline = "En enkel, diskret timer for bekkenbunnsøvelser"
 hero_image = "nb/hero.png"
 description = """
@@ -372,6 +387,7 @@ Tilgjengelig på 18 språk · Kompatibel med over 100 Garmin-enheter
 [[languages]]
 locale = "fi"
 title = "Kegel Trainer"
+whats_new = "Aloitusnäyttö näkyy nyt kokonaan omalla kielelläsi. Lisäksi muutama pieni luotettavuusparannus."
 tagline = "Yksinkertainen ja huomaamaton ajastin lantionpohjaharjoituksiin"
 hero_image = "fi/hero.png"
 description = """
@@ -396,6 +412,7 @@ Saatavilla 18 kielellä · Yhteensopiva yli 100 Garmin-laitteen kanssa
 [[languages]]
 locale = "cs"
 title = "Kegel Trainer"
+whats_new = "Úvodní obrazovka se nyní zobrazuje celá ve vašem jazyce. Navíc několik drobných vylepšení spolehlivosti."
 tagline = "Jednoduchý časovač pro cvičení pánevního dna"
 hero_image = "cs/hero.png"
 description = """
@@ -420,6 +437,7 @@ K dispozici v 18 jazycích · Kompatibilní s více než 100 zařízeními Garmi
 [[languages]]
 locale = "ru"
 title = "Kegel Trainer"
+whats_new = "Стартовый экран теперь полностью отображается на вашем языке. Кроме того, несколько небольших улучшений надёжности."
 tagline = "Простой и неприметный таймер для тазового дна"
 hero_image = "ru/hero.png"
 description = """

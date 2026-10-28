@@ -27,4 +27,8 @@
         <string id="ActivityTypeFlexibility">Flexibility</string>
         <string id="ActivityTypeGeneral">General</string>
     <string id="SettingDisableRecordingTitle">Wyłącz nagrywanie</string>
+
+    <!-- Start screen summary ($1$, $2$ are filled in by the app) -->
+    <string id="RepsSeries">$1$ powt. × $2$ serii</string>
+    <string id="ContractRelaxFmt">$1$s / $2$s</string>
 </strings>

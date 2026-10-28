@@ -21,6 +21,26 @@ enum {
     STATE_COMPLETE    // Workout finished
 }
 
+//! Property reads that survive a missing, empty or wrong-typed value
+function propNumber(key as Lang.String, fallback as Lang.Number) as Lang.Number {
+    var v = Properties.getValue(key);
+    if (v instanceof Lang.Number) { return v as Lang.Number; }
+    if (v instanceof Lang.Float)  { return (v as Lang.Float).toNumber(); }
+    return fallback;
+}
+
+function propString(key as Lang.String, fallback as Lang.String) as Lang.String {
+    var v = Properties.getValue(key);
+    if (v instanceof Lang.String && (v as Lang.String).length() > 0) { return v as Lang.String; }
+    return fallback;
+}
+
+function propBoolean(key as Lang.String, fallback as Lang.Boolean) as Lang.Boolean {
+    var v = Properties.getValue(key);
+    if (v instanceof Lang.Boolean) { return v as Lang.Boolean; }
+    return fallback;
+}
+
 //! Main view class for the Kegel Trainer
 class KegelTrainerView extends Ui.View {
 
@@ -60,13 +80,14 @@ class KegelTrainerView extends Ui.View {
 
     //! Load settings from Properties
     private function loadSettings() {
-        _repsPerSeries = Properties.getValue("repsPerSeries") as Lang.Number;
-        _numSeries = Properties.getValue("numSeries") as Lang.Number;
-        _contractTime = Properties.getValue("contractTime") as Lang.Number;
-        _relaxTime = Properties.getValue("relaxTime") as Lang.Number;
-        _activityName = Properties.getValue("activityName") as Lang.String;
-        _activityType = Properties.getValue("activityType") as Lang.Number;
-        _disableRecording = Properties.getValue("disableRecording") as Lang.Boolean;
+        // The phone app can send empty or wrong-typed values: every read falls back to its default
+        _repsPerSeries = propNumber("repsPerSeries", 10);
+        _numSeries = propNumber("numSeries", 1);
+        _contractTime = propNumber("contractTime", 10);
+        _relaxTime = propNumber("relaxTime", 5);
+        _activityName = propString("activityName", "Kegel");
+        _activityType = propNumber("activityType", 0);
+        _disableRecording = propBoolean("disableRecording", false);
     }
 
     //! Called when the view is brought to the foreground
@@ -116,6 +137,11 @@ class KegelTrainerView extends Ui.View {
     private function startSession() {
         if (Toybox has :ActivityRecording) {
             if (_session == null || !_session.isRecording()) {
+                // a session left over from an unanswered save dialog would be orphaned: drop it first
+                if (_session != null) {
+                    _session.discard();
+                    _session = null;
+                }
                 var sport = Activity.SPORT_TRAINING;
                 var subSport = Activity.SUB_SPORT_BREATHING;
 
@@ -370,11 +396,11 @@ class KegelTrainerView extends Ui.View {
         dc.setColor(Gfx.COLOR_LT_GRAY, Gfx.COLOR_TRANSPARENT);
 
         var repsY = (screenHeight * 0.45).toNumber();
-        var repsText = _repsPerSeries + " reps x " + _numSeries + " series";
+        var repsText = Lang.format(WatchUi.loadResource(Rez.Strings.RepsSeries) as Lang.String, [_repsPerSeries, _numSeries]);
         dc.drawText(centerX, repsY, Gfx.FONT_SMALL, repsText, Gfx.TEXT_JUSTIFY_CENTER);
 
         var detailsY = repsY + hSmall;
-        var detailsText = _contractTime + "s / " + _relaxTime + "s";
+        var detailsText = Lang.format(WatchUi.loadResource(Rez.Strings.ContractRelaxFmt) as Lang.String, [_contractTime, _relaxTime]);
         dc.drawText(centerX, detailsY, Gfx.FONT_SMALL, detailsText, Gfx.TEXT_JUSTIFY_CENTER);
 
         // --- START PROMPT ---

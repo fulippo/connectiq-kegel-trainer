@@ -27,4 +27,8 @@
         <string id="ActivityTypeFlexibility">Flexibility</string>
         <string id="ActivityTypeGeneral">General</string>
     <string id="SettingDisableRecordingTitle">활동 기록 비활성화</string>
+
+    <!-- Start screen summary ($1$, $2$ are filled in by the app) -->
+    <string id="RepsSeries">$1$회 × $2$세트</string>
+    <string id="ContractRelaxFmt">$1$초 / $2$초</string>
 </strings>
