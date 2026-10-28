@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.5](https://github.com/fulippo/connectiq-kegel-trainer/compare/v1.3.4...v1.3.5) (2026-10-28)
+
+
+### Bug Fixes
+
+* **i18n:** translate the start screen summary; guard settings reads; drop a leftover session ([#21](https://github.com/fulippo/connectiq-kegel-trainer/issues/21)) ([c2cd897](https://github.com/fulippo/connectiq-kegel-trainer/commit/c2cd897459af4c2e1de26b40c95614d2bd2c99e1))
+
 ## [1.3.4](https://github.com/fulippo/garmin-kegel-trainer/compare/v1.3.3...v1.3.4) (2026-06-21)
 
 
