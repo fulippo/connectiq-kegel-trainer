@@ -471,7 +471,7 @@ countries = []
 [contact]
 # Shown on the listing: the address buyers may write to.
 email = "fulippo@gmail.com"
-source_url = "https://github.com/fulippo/garmin-kegel-trainer"
+source_url = "https://github.com/fulippo/connectiq-kegel-trainer"
 video_url = ""
 review_notifications = true
 app_migration = true
